@@ -36,34 +36,46 @@ Vict Descent - Descent Code: A - Other Asian B - Black C - Chinese D - Cambodian
 With respect to crime carried out in the city of Los Angeles, five sorts have a more prominent unmistakable quality because of the quantity of events, among the violations perpetrated somewhere in the range of 2020 and 2021 the most successive are recorded:
 
 Battery — Simple Assault, about 10.9%
+
 Burglary from Vehicle, about 8.39%
+
 Assault With Deadly Weapon, about 7.54%
+
 Intimidate Partner, about 7.28%
+
 Vandalism, about 6.44%
 
 The Los Angeles Police Department (LAPD) has a division for the police headquarters by networks, where gives general data and help, there are 21 topographical regions citywide According to the data frame, the communities where most crimes committed are:
 
 77th Street Area, about 6.76%
+
 Southwest Area, about 6.28%
+
 Central Area, about 5.97%
+
 Pacific Area, about 5.54%
+
 Southeast Area, about 5.46%
 
 Time and date in which the crime percentage is high:
 
 01/01/2020 12:00AM Above 800 crimes
+
 03/01/2020 12:00AM 590 crimes
+
 02/01/2020 12:00AM 580 crimes
 
 Age classification of individuals took part in crimes:
 
 30 Years, about 3.1%
+
 29 Years, about 3.0%
+
 28 Years, about 2.9%
 
 
 
 
-References:
+##References:
 https://medium.com/analytics-vidhya/los-angeles-crime-data-analysis-using-pandas-a68780d80a83
 

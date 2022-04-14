@@ -1,6 +1,6 @@
-# crime-data-analysis
+# Crime-Data-Analysis
 Los Angeles Crime Data Analysis
-# data link - https://data.lacity.org/api/views/2nrs-mtv8/rows.csv?accessType=DOWNLOAD
+# Data link - https://data.lacity.org/api/views/2nrs-mtv8/rows.csv?accessType=DOWNLOAD
 
 ## Abstract:
 A subject with conversations about crime analysis in the city all over the planet. After some investigates to observe open information, I've chosen to investigate the information in Los Angeles city. Confined in the south of California, it's the subsequent more inhabited city in the United States (just behind New York), it's the focal point of the film and media business.
@@ -31,7 +31,7 @@ Vict Sex - F: Female M: Male X: Unknown
 
 Vict Descent - Descent Code: A - Other Asian B - Black C - Chinese D - Cambodian F - Filipino G - Guamanian H - Hispanic/Latin/Mexican I - American Indian/Alaskan Native J - Japanese K - Korean L - Laotian O - Other P - Pacific Islander S - Samoan U - Hawaiian V - Vietnamese W - White X - Unknown Z - Asian Indian Premis Cd - The type of structure, vehicle, or location where the crime took place. Premis Desc - Defines the Premise Code provided. Weapon Used Cd - The type of weapon used in the crime. Weapon Desc - Defines the Weapon Used Code provided. LOCATION - Street address of crime incident rounded to the nearest hundred block to maintain anonymity. LAT - Latitude Coordinate. LON - Longitude Coordinate.
 
-## exploratory data analysis:
+## Exploratory data analysis:
 
 With respect to crime carried out in the city of Los Angeles, five sorts have a more prominent unmistakable quality because of the quantity of events, among the violations perpetrated somewhere in the range of 2020 and 2021 the most successive are recorded:
 

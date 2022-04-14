@@ -3,7 +3,7 @@ Los Angeles Crime Data Analysis
 # data link - https://data.lacity.org/api/views/2nrs-mtv8/rows.csv?accessType=DOWNLOAD
 
 ## Abstract:
-a subject with conversations about crime analysis in the city all over the planet. After some investigates to observe open information, I've chosen to investigate the information in Los Angeles city. Confined in the south of California, it's the subsequent more inhabited city in the United States (just behind New York), it's the focal point of the film and media business.
+A subject with conversations about crime analysis in the city all over the planet. After some investigates to observe open information, I've chosen to investigate the information in Los Angeles city. Confined in the south of California, it's the subsequent more inhabited city in the United States (just behind New York), it's the focal point of the film and media business.
 Although crimes are committed at unexpected times, crime is a difficult topic for analytics and prediction, and therefore no actual crime prediction model could ever be as accurate as "Minority Report." 
 Evaluating criminal background information to predict illegal acts could made in decreasing crime rates as well as preventing future losses. 
 This crime report recommends the least and also most dangerous areas by evaluating the dataset.
@@ -76,6 +76,6 @@ Age classification of individuals took part in crimes:
 
 
 
-##References:
+## References:
 https://medium.com/analytics-vidhya/los-angeles-crime-data-analysis-using-pandas-a68780d80a83
 

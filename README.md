@@ -125,7 +125,7 @@ It seems like Random Forest has 59% accuracy cannot be considered a good classif
 Also, the ROC_AUC score for Random Forest has also increased to 61%. Random forest have the least accuracy compare to other models.
 
 ## Conclusion
-####After analyzing the three models, I think Logistic Regression Classifier can classify better compared to others.We can improve the accuracy by dealing the dataset imbalance through better modeling techniques.
+####After analyzing the five models, I think Logistic Regression Classifier can classify better compared to others.We can improve the accuracy by dealing the dataset imbalance through better modeling techniques.
 
 
 

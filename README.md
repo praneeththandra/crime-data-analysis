@@ -7,7 +7,7 @@ https://data.lacity.org/api/views/2nrs-mtv8/rows.csv?accessType=DOWNLOAD
 A subject with conversations about crime analysis in the city all over the planet. After some investigates to observe open information, I've chosen to investigate the information in Los Angeles city. Confined in the south of California, it's the subsequent more inhabited city in the United States (just behind New York), it's the focal point of the film and media business.
 Although crimes are committed at unexpected times, crime is a difficult topic for analytics and prediction, and therefore no actual crime prediction model could ever be as accurate as "Minority Report." 
 Evaluating criminal background information to predict illegal acts could made in decreasing crime rates as well as preventing future losses. 
-This crime report recommends the least and also most dangerous areas by evaluating the dataset.
+
 
 ## Objective:
 To predict and classify the victim sex depending on the location, date, time, DR_NO, Area, crime code, victim age, the type of weapon used in the crime, vehicle, or location where the crime took place.

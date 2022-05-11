@@ -10,10 +10,10 @@ Evaluating criminal background information to predict illegal acts could made in
 This crime report recommends the least and also most dangerous areas by evaluating the dataset.
 
 ## Objective:
-To predict and classify the Crime Code depending on the vict age, loaction,time.
+To predict and classify the victim sex depending on the location,date,time,DR_NO,Area,crime code,vict age,The type of weapon used in the crime,vehicle, or location where the crime took place.
 
 ## Data discribtion
-The dataset that will be presented in the next lines is available on the Los Angeles Open Data, for this purpose, I’ve used the dataset “Crime Data from 2020 to Present”, which covers crime incidents in Los Angeles between the years of 2020 and 2021. The original file has 28 columns and 220405 rows. The file has been pre-processed in Jupyter Notebook, to remove some rows values and columns that will be not used in the analysis.
+The dataset that will be presented in the next lines is available on the Los Angeles Open Data, for this purpose, I’ve used the dataset “Crime Data from 2020 to Present”, which covers crime incidents in Los Angeles between the years of 2020 and 2021. The original file has 28 columns and 360341 rows. The file has been pre-processed in Jupyter Notebook, to remove some rows values and columns that will be not used in the analysis.
 
 ## Below are all the variables in the dataset, followed by its description:
 DR_NO - Division of Records Number: Official file number made up of a 2 digit year, area ID, and 5 digits.
@@ -50,67 +50,80 @@ LAT - Latitude Coordinate.
 
 LON - Longitude Coordinate.
 
+## Data Cleanup
+
+Though this dataset has 28 columns.I omitted 'Crm Cd 4','Crm Cd 3','Crm Cd 2','Cross Street' columns because they dont have significant information for analysis.
+all the Columns which are dropped  has many nulls.Even if we do imputing, its values will be duplicated. I removed the values for the "Vict Age" column where vict age contains <1 these values are not usefull for my analysis. Final dataset has 52880 rows and 24 columns I took limited amount of data for my modeling and classification.
+
 ## Exploratory data analysis:
 
 With respect to crime carried out in the city of Los Angeles, five sorts have a more prominent unmistakable quality because of the quantity of events, among the violations perpetrated somewhere in the range of 2020 and 2021 the most successive are recorded:
 
-Battery — Simple Assault, about 10.9%
+Battery — Simple Assault, about 5800
 
-Burglary from Vehicle, about 8.39%
+Burglary from Vehicle, about 3600
 
-Assault With Deadly Weapon, about 7.54%
+Assault With Deadly Weapon, about 3700
 
-Intimidate Partner, about 7.28%
-
-Vandalism, about 6.44%
+Intimidate Partner, about 3400
 
 The Los Angeles Police Department (LAPD) has a division for the police headquarters by networks, where gives general data and help, there are 21 topographical regions citywide According to the data frame, the communities where most crimes committed are:
 
-77th Street Area, about 6.76%
+Southwest Area, about 8700
 
-Southwest Area, about 6.28%
+Central Area, about 8400
 
-Central Area, about 5.97%
+Rampart, about 6300
 
-Pacific Area, about 5.54%
-
-Southeast Area, about 5.46%
+harbor, about 6000
 
 Time and date in which the crime percentage is high:
 
-01/01/2020 12:00AM Above 800 crimes
+01/01/2020 12:00AM Above 250 crimes
 
-03/01/2020 12:00AM 590 crimes
+02/14/2020 12:00AM 180 crimes
 
-02/01/2020 12:00AM 580 crimes
+02/01/2020 12:00AM 190 crimes
 
-Age classification of individuals took part in crimes:
 
-30 Years, about 3.1%
+## Feature Engineering:
 
-29 Years, about 3.0%
+1.My objective is to predict victims sex. the column 'Vict Sex' has three values 'M' , 'F' and 'X' where X means unknown gender so we don't need the X values for the modeling and classification so i dropped those values and thus making the class distribution balanced and making it a binary classification.
+2.My features count of categorical and numerical are almost equal.
 
-28 Years, about 2.9%
 
-## Data Cleanup
-Though this dataset has 28 columns.I omitted 'Crm Cd 4','Crm Cd 3','Crm Cd 2','Cross Street' columns because they dont have significant information for analysis.
-all the Columns which are dropped  has many nulls.Even if we do imputing, its values will be duplicated. I removed the values for the "Vict Age" column where vict age contains <1. Final dataset has 10000 rows and 24 columns. Actual dataset has ----
+## Modeling and Classification
 
-Feature Engineering
-1.My objective is to predict sentence type.But the distribution of classes seams to be imbalanced.There are less samples for Long Split.Short Split Sentence and Long Split means offenders serving some time in prison and some time outside depending on their behaviour.Probation also serves the same purpsose.So,I merged the Short Split and Long Split into Probation and thus making the class distribution balanced and making it a binary classification
-2. Most of my features are categorical and as a part of preprocessing, I have to label encode them for training.
-3.Most of the features are negatively correlated to target variable "SENTENCE_TYPE".I think it is a good correlation because higher correlation might have masked the prediction.
+Since, there is a balance in the class data, after cleaning This dataset has almost 44494 rows.So, we alteast need 80 % of the data for training.
+Training examples: 35595
+Test examples: 8899
 
-Modeling and Classification
-Since, there is a slight imbalance in the class data, I have done oversampling to negate the imbalance to some extent using SMOTE function
-This dataset has almost 24324 rows.So, we alteast need 80 % of the data for training.
+# Results
+Classification using Logistic Regression
+Hyperparameters Used: Used 0.001, 0.1,1,10 as penalty strengths for grid search.
+Accuracy of 64% cannot be considered a good discrimination.
+For this classifier, ROC_AUC score is 68% which has to be improved.
 
-Conclusion
-####After analyzing the three models, I think KNN Classifier can classify better compared to others.We can improve the accuracy by dealing the dataset imbalance through better modeling techniques.
+Classification using Decision Tree Classifier
+Hyperparameters Used: Used 3,5,6,8,10 as max_depths for grid search.
+This model has 64% accuracy which is same compared to Logistic Regression.
+Even the ROC_AUC score has been increased to 67%,but that's not enough for a good classification.
+
+Classification using Kmeans
+Hyperparameters Used:  0.001, 0.1,1,10 
+It seems like Kmeans has 59% accuracy cannot be considered a good classification.
+Also, the ROC_AUC score for Kmeans has also increased to 62%.
+
+## Conclusion
+####After analyzing the three models, I think Logistic Regression Classifier can classify better compared to others.We can improve the accuracy by dealing the dataset imbalance through better modeling techniques.
 
 
 
 
 ## References:
 https://medium.com/analytics-vidhya/los-angeles-crime-data-analysis-using-pandas-a68780d80a83
+https://github.com/appliedecon/data602-lectures/blob/main/regression/linear-regression-and-regularization.ipynb
+https://github.com/appliedecon/data602-lectures/blob/main/unsupervised/clustering.ipynb
+https://github.com/appliedecon/data602-lectures/blob/main/dimension-reduction/dimension-reduction.ipynb
+https://github.com/appliedecon/data602-lectures/blob/main/trees/trees.ipynb
 

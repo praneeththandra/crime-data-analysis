@@ -88,8 +88,11 @@ Time and date in which the crime percentage is high:
 
 ## Feature Engineering:
 
-1.My objective is to predict victims sex. the column 'Vict Sex' has three values 'M' , 'F' and 'X' where X means unknown gender so we don't need the X values for the modeling and classification so i dropped those values and thus making the class distribution balanced and making it a binary classification.
-2.My features count of categorical and numerical are almost equal.
+My objective is to predict victim sex, the column 'Vict Sex' has three values 'M' , 'F' and 'X' where X means unknown gender. So, we don't need the X values for the modeling and classification. So, I dropped those values to make the class distribution balanced and making it a binary classification.
+Both categorical and numerical features are balanced in this dataset. 
+The values of the target column ‘Vict sex’ are also balanced. 
+
+
 
 
 ## Modeling and Classification

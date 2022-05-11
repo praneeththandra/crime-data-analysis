@@ -10,9 +10,9 @@ Evaluating criminal background information to predict illegal acts could made in
 This crime report recommends the least and also most dangerous areas by evaluating the dataset.
 
 ## Objective:
-To predict and classify the victim sex depending on the location,date,time,DR_NO,Area,crime code,vict age,The type of weapon used in the crime,vehicle, or location where the crime took place.
+To predict and classify the victim sex depending on the location, date, time, DR_NO, Area, crime code, victim age, the type of weapon used in the crime, vehicle, or location where the crime took place.
 
-## Data discribtion
+## Data description
 The dataset that will be presented in the next lines is available on the Los Angeles Open Data, for this purpose, I’ve used the dataset “Crime Data from 2020 to Present”, which covers crime incidents in Los Angeles between the years of 2020 and 2021. The original file has 28 columns and 360341 rows. The file has been pre-processed in Jupyter Notebook, to remove some rows values and columns that will be not used in the analysis.
 
 ## Below are all the variables in the dataset, followed by its description:

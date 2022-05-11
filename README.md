@@ -90,7 +90,7 @@ Time and date in which the crime percentage is high:
 
 My objective is to predict victim sex, the column 'Vict Sex' has three values 'M' , 'F' and 'X' where X means unknown gender. So, we don't need the X values for the modeling and classification. So, I dropped those values to make the class distribution balanced and making it a binary classification.
 Both categorical and numerical features are balanced in this dataset. 
-The values of the target column ‘Vict sex’ are also balanced. 
+The values of the target column ‘Vict sex’ are almost balanced. 
 
 
 

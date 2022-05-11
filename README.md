@@ -101,18 +101,28 @@ Test examples: 8899
 # Results
 Classification using Logistic Regression
 Hyperparameters Used: Used 0.001, 0.1,1,10 as penalty strengths for grid search.
-Accuracy of 64% cannot be considered a good discrimination.
-For this classifier, ROC_AUC score is 68% which has to be improved.
+Accuracy of 64% can be considered a good discrimination.
+For this classifier, ROC_AUC score is 69% which has the best value compared to other classification.
 
 Classification using Decision Tree Classifier
 Hyperparameters Used: Used 3,5,6,8,10 as max_depths for grid search.
 This model has 64% accuracy which is same compared to Logistic Regression.
-Even the ROC_AUC score has been increased to 67%,but that's not enough for a good classification.
+Even the ROC_AUC score has been increased to 67%, but that's not enough for a good classification.
 
 Classification using Kmeans
 Hyperparameters Used:  0.001, 0.1,1,10 
 It seems like Kmeans has 59% accuracy cannot be considered a good classification.
 Also, the ROC_AUC score for Kmeans has also increased to 62%.
+
+Classification using K-Nearest Neighbors Classifier:
+Hyperparameters Used: Used 4,8,10 as number of neighbors for grid search
+It seems like K-Nearest Neighbors has 60% accuracy cannot be considered a good classification.
+Also, the ROC_AUC score for Kmeans has also increased to 64%, but that's not enough for a good classification..
+
+Classification using Random Forest:
+Hyperparameters Used:  5, 8, 10 
+It seems like Random Forest has 59% accuracy cannot be considered a good classification.
+Also, the ROC_AUC score for Random Forest has also increased to 61%. Random forest have the least accuracy compare to other models.
 
 ## Conclusion
 ####After analyzing the three models, I think Logistic Regression Classifier can classify better compared to others.We can improve the accuracy by dealing the dataset imbalance through better modeling techniques.

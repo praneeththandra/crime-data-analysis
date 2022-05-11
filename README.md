@@ -120,7 +120,7 @@ Also, the ROC_AUC score for Kmeans has also increased to 62%.
 Classification using K-Nearest Neighbors Classifier:
 Hyperparameters Used: Used 4,8,10 as number of neighbors for grid search
 It seems like K-Nearest Neighbors has 60% accuracy cannot be considered a good classification.
-Also, the ROC_AUC score for Kmeans has also increased to 64%, but that's not enough for a good classification..
+Also, the ROC_AUC score for Knn has also increased to 64%, but that's not enough for a good classification.
 
 Classification using Random Forest:
 Hyperparameters Used:  5, 8, 10 
